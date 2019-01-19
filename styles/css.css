@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("./Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("./Poppins-SemiBold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato-Regular.ttf");
+}
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato-Italic.ttf");
+    font-style: italic;
+}
+
+h1 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 46px;
+  font-weight: normal;
+  color: #000;
+}
+
+h2 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #102542;
+}
+
+h3 {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: normal;
+  color: #818181;
+}
+
+p {
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+
+nav {
+  height: 86px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .logo {
+  height: 86px;
+  display: flex;
+}
+
+nav .logo img {
+  height: 60%;
+  align-self: center;
+}
+
+nav .tagline {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+}
+
+nav .navlinks ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav .navlinks ul li {
+  margin: 0 12px;
+}
+
+nav .navlinks ul li a {
+  text-decoration: none;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  color: #818181;
+}
+
+.featured {
+  height: 810px;
+  background-image: url("../images/becomingfeature.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.featured .descbox {
+  width: 500px;
+  height: 276px;
+  background-color: rgba(255, 255, 255, 0.65);
+  position: absolute;
+  right: 160px;
+  bottom: 120px;
+  padding: 64px 32px;
+}
+
+.featured .descbox h3 {
+  margin: 30px 0;
+}
+
+.about {
+  height: 200px;
+  padding: 120px 0;
+  background-image: linear-gradient(to top right, #102542, #1F4682);
+}
+
+.about {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about .logo {
+  height: 120px;
+  align-self: center;
+}
+
+.about .logo img {
+  height: 100%;
+}
+
+.about h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about p {
+  color: #fff;
+  width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.bookshelf {
+  height: 720px;
+}
+
+.bookshelf .book {
+  width: 202px;
+}
+
+.bookshelf .book img {
+  width: 100%;
+}
