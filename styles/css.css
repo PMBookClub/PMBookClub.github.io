@@ -228,8 +228,6 @@ nav .navlinks ul li a:hover {
 .bookshelf .book img {
   width: 100%;
   box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
 }
 
 .bookshelf .book img:hover {
@@ -276,8 +274,80 @@ nav .navlinks ul li a:hover {
   vertical-align: top;
   border: 0;
   border-radius: 0 45px 45px 0;
-  background-image: linear-gradient(to top right, #F87060, #FE9F76);
+  background-color: #F87060;
   font-size: 20px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
   font-family: "Lato", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.searchbar button:hover {
+  background-color: #FE9F76;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.overview {
+  height: 420px;
+  margin: 64px 200px;
+  display: flex;
+}
+
+.overview .cover {
+  width: 280px;
+}
+
+.overview .cover img {
+  width: 100%;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.overview .desc {
+  width: 710px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overview .desc h2, h3, h6, p {
+  margin: 10px 0;
+}
+
+.overview .desc h6 {
+  font-family: "Poppins", Arial sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #102542;
+}
+
+.overview .link {
+  width: 200px;
+  height: 42px;
+  margin: 10px 0;
+  border-radius: 45px;
+  background-color: #F87060;
+  text-align: center;
+  line-height: 42px;
+  vertical-align: middle;
+  font-size: 20px;
+  font-family: "Lato", Arial, sans-serif;
+  color: #fff;
+}
+
+.overview .link:hover {
+  background-color: #FE9F76;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.highlights {
+  padding: 64px 320px;
+  background-color: #ebebeb;
+}
+
+.highlights h2 {
+  text-align: center;
+  margin-bottom: 10px;
 }
