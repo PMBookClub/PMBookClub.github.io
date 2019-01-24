@@ -98,6 +98,9 @@ p {
 
 nav {
   height: 86px;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -139,10 +142,22 @@ nav .navlinks ul li a:hover {
 }
 
 .featured {
+  position:relative;
+}
+
+.feature {
+  display: none;
   height: 810px;
-  background-image: url("../images/becomingfeature.jpg");
-  background-size: cover;
   position: relative;
+  background-size: cover;
+}
+
+#feature1 {
+    background-image: url("../images/becomingfeature.jpg");
+}
+
+#feature2 {
+    background-image: url("../images/tidyingupfeature.jpg");
 }
 
 .featured .descbox {
@@ -159,6 +174,14 @@ nav .navlinks ul li a:hover {
   margin: 30px 0;
 }
 
+.featured .descbox a {
+  color: #818181;
+}
+
+.featured .descbox a:hover {
+  color: #F87060;
+}
+
 .featured .arrow img {
   opacity: 0.25;
   position: absolute;
@@ -167,7 +190,7 @@ nav .navlinks ul li a:hover {
 }
 
 .featured .arrow img:hover {
-  opacity: 0.5;
+  opacity: 0.65;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   transform: translate(10px);
