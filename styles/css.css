@@ -102,6 +102,7 @@ nav {
   z-index: 9999;
   position: fixed;
   background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -122,23 +123,53 @@ nav .tagline {
   font-size: 16px;
 }
 
-nav .navlinks ul {
+nav ul {
   list-style-type: none;
   display: flex;
 }
 
-nav .navlinks ul li {
+nav ul li {
   margin: 0 12px;
 }
 
-nav .navlinks ul li a {
+nav ul li a {
   font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
   color: #818181;
+  position: relative;
 }
 
-nav .navlinks ul li a:hover {
+nav ul li a:hover {
   color: #F87060;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -3px;
+  background-color: #F87060;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+nav ul li a.active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .featured {
@@ -150,6 +181,7 @@ nav .navlinks ul li a:hover {
   height: 810px;
   position: relative;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #feature1 {
@@ -161,13 +193,13 @@ nav .navlinks ul li a:hover {
 }
 
 .featured .descbox {
-  width: 500px;
+  width: 436px;
   height: 276px;
   background-color: rgba(255, 255, 255, 0.65);
   position: absolute;
   right: 160px;
   bottom: 120px;
-  padding: 64px 32px;
+  padding: 64px;
 }
 
 .featured .descbox h3 {
@@ -183,17 +215,19 @@ nav .navlinks ul li a:hover {
 }
 
 .featured .arrow img {
-  opacity: 0.25;
+  width: 40px;
+  opacity: 0.5;
   position: absolute;
-  right: 80px;
-  bottom: 282px;
+  right: 180px;
+  bottom: 298px;
 }
 
 .featured .arrow img:hover {
-  opacity: 0.65;
+  opacity: 0.85;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  transform: translate(10px);
+  transform: translate(8px);
+  cursor: pointer;
 }
 
 .about {
@@ -283,7 +317,9 @@ nav .navlinks ul li a:hover {
 
 .search {
   height: 250px;
+  padding-top: 86px;
   background-image: linear-gradient(to top right, #102542, #1F4682);
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,43 +328,24 @@ nav .navlinks ul li a:hover {
 .searchbar {
   height: 45px;
   width: 700px;
-
 }
 
 .searchbar input {
   height: 45px;
-  width: 545px;
+  width: 700px;
   border: 0;
-  border-radius: 45px 0 0 45px;
+  border-radius: 45px;
   padding-left: 30px;
   font-size: 18px;
   color: #818181;
 }
 
-.searchbar button {
-  height: 45px;
-  width: 125px;
-  vertical-align: top;
-  border: 0;
-  border-radius: 0 45px 45px 0;
-  background-color: #F87060;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
-  font-family: "Lato", Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.searchbar button:hover {
-  background-color: #FE9F76;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
 .overview {
   height: 420px;
-  margin: 64px 200px;
+  margin: 0 200px 64px;
+  padding-top: 150px;
   display: flex;
+  justify-content: center;
 }
 
 .overview .cover {
@@ -386,5 +403,5 @@ nav .navlinks ul li a:hover {
 
 .highlights h2 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }

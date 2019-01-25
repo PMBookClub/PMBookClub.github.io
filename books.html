@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <title>All Books</title>
   <link href="./styles/css.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/search.js"></script>
 </head>
 
 <body>
@@ -26,20 +28,24 @@
   </nav>
 
   <section class="search">
-    <form class="searchbar" action="">
-      <input type="text" placeholder="Search for books..." name="search"><button type="submit">SEARCH</button>
+    <form class="searchbar">
+      <input id="searchInput" type="text" placeholder="Search for book title or author...">
     </form>
+    <div class="filter">
+
+    </div>
   </section>
 
 
     <section class="bookshelf bottomshelf">
-      <div class="allbooks">
+      <div class="allbooks" id="allbooks">
+
         <figure class="book">
           <a href="becoming.html">
             <img src="./images/cover_becoming.jpg" alt="Becoming by Michelle Obama Book Cover" />
           </a>
           <figcaption class="bookinfo">
-            <h4><a href="">Becoming</a></h4>
+            <h4><a href="becoming.html">Becoming</a></h4>
             <h5>by Michelle Obama</h5>
           </figcaption>
         </figure>
