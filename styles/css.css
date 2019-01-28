@@ -341,7 +341,7 @@ nav ul li a.active:before {
 }
 
 .overview {
-  height: 420px;
+  height: auto;
   margin: 0 200px 64px;
   padding-top: 150px;
   display: flex;
@@ -350,6 +350,7 @@ nav ul li a.active:before {
 
 .overview .cover {
   width: 280px;
+  min-width: 280px;
 }
 
 .overview .cover img {
@@ -379,7 +380,7 @@ nav ul li a.active:before {
 .overview .link {
   width: 200px;
   height: 42px;
-  margin: 10px 0;
+  margin: 20px 0;
   border-radius: 45px;
   background-color: #F87060;
   text-align: center;
@@ -397,8 +398,13 @@ nav ul li a.active:before {
 }
 
 .highlights {
-  padding: 64px 320px;
+  padding: 64px 0;
   background-color: #ebebeb;
+}
+
+.highlights p {
+  margin: 30px auto;
+  width: 800px;
 }
 
 .highlights h2 {
@@ -445,6 +451,10 @@ nav ul li a.active:before {
     margin: 0 120px;
   }
 
+  .highlights p {
+      width: 60%;
+  }
+
 }
 
 @media screen and (max-width: 840px){
@@ -475,6 +485,26 @@ nav ul li a.active:before {
     text-align: right;
   }
 
+  .featured {
+    position: static;
+  }
+
+  .feature {
+    position: static;
+    padding-top: 245px;
+    height: 565px;
+  }
+
+  .featured .descbox {
+    position: static;
+    margin: auto;
+  }
+
+  .featured .arrow img {
+    top: 380px;
+    right: 140px;
+  }
+
   .searchbar {
     width: 500px;
   }
@@ -483,10 +513,57 @@ nav ul li a.active:before {
     width: 440px;
   }
 
+  .overview {
+    margin: 0 5% 64px;
+  }
+
+  .overview .cover {
+    min-width: 200px;
+  }
+
+}
+
   @media screen and (max-width: 640px) {
     .menumobile .text .tagline {
       display: none;
     }
+
+    .featured {
+      width: 100%;
+    }
+
+    .featured .descbox {
+      position: static;
+      width: calc(100% - 128px);
+      height: auto;
+    }
+
+    .featured .arrow img {
+      top: 380px;
+      right: 10px;
+    }
+
+    .highlights p {
+        width: 80%;
+    }
+
+    .overview {
+      flex-wrap: wrap;
+    }
+
+    .overview .desc {
+      margin-left: 0;
+    }
+
+    .overview h2, .overview h3, .overview h6 {
+      text-align: center;
+    }
+
+    .overview .link {
+      margin: 20px auto;
+    }
+
+
   }
 
   @media screen and (max-width: 540px) {
@@ -497,5 +574,4 @@ nav ul li a.active:before {
     .searchbar input {
       width: 200px;
     }
-  }
 }
