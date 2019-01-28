@@ -3,7 +3,7 @@ $(document).ready(function() {
   var slideIndex = 1;
   showDivs(slideIndex);
 
-  $("#img-clck").click(function(){
+  $("#img-click").click(function(){
     showDivs(slideIndex += 1);
   });
 

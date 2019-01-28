@@ -74,7 +74,6 @@ h4 a {
 }
 
 h4:hover {
-  letter-spacing: 1px;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -106,6 +105,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.menumobile {
+  display: none;
 }
 
 nav .logo {
@@ -198,7 +201,7 @@ nav ul li a.active:before {
   background-color: rgba(255, 255, 255, 0.65);
   position: absolute;
   right: 160px;
-  bottom: 120px;
+  top: 245px;
   padding: 64px;
 }
 
@@ -219,7 +222,7 @@ nav ul li a.active:before {
   opacity: 0.5;
   position: absolute;
   right: 180px;
-  bottom: 298px;
+  top: 427px;
 }
 
 .featured .arrow img:hover {
@@ -317,6 +320,7 @@ nav ul li a.active:before {
 
 .search {
   height: 250px;
+  width: 100%;
   padding-top: 86px;
   background-image: linear-gradient(to top right, #102542, #1F4682);
   background-attachment: fixed;
@@ -325,17 +329,13 @@ nav ul li a.active:before {
   align-items: center;
 }
 
-.searchbar {
-  height: 45px;
-  width: 700px;
-}
 
 .searchbar input {
   height: 45px;
-  width: 700px;
+  width: 640px;
   border: 0;
   border-radius: 45px;
-  padding-left: 30px;
+  padding: 0 30px;
   font-size: 18px;
   color: #818181;
 }
@@ -404,4 +404,98 @@ nav ul li a.active:before {
 .highlights h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1190px) {
+
+  .bookshelf {
+    width: 100%;
+  }
+
+  .bookshelf .books {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .bookshelf .allbooks {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .about {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about .logo {
+    margin-bottom: 120px;
+  }
+
+  .about .logo img {
+    text-align: center;
+  }
+
+  .about .text {
+    width: 100%;
+  }
+
+  .about p {
+    width: auto;
+    margin: 0 120px;
+  }
+
+}
+
+@media screen and (max-width: 840px){
+
+/* MOBILE MENU */
+
+  .menudesk {
+    display: none;
+  }
+
+  .menumobile {
+    display: flex;
+  }
+
+  .menumobile .logo {
+    margin: 0 30px;
+  }
+
+  .menumobile .text {
+    display: flex;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .menumobile .text .tagline {
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .searchbar {
+    width: 500px;
+  }
+
+  .searchbar input {
+    width: 440px;
+  }
+
+  @media screen and (max-width: 640px) {
+    .menumobile .text .tagline {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .searchbar {
+      width: 260px;
+    }
+
+    .searchbar input {
+      width: 200px;
+    }
+  }
 }
