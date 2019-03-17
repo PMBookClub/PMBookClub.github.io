@@ -14,193 +14,171 @@
 
   <nav class="menudesk">
     <div class="logo">
-      <img src="./images/logogradient1.png" alt="PM Book Club Logo">
+      <img src="./images/logo.png" alt="PM Book Club Logo">
     </div>
-    <div class="tagline">
-      A resource to help project managers discover books and ideas.
-    </div>
-    <div class="navlinks">
-      <ul>
+    <ul>
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="index.html#about">About</a></li>
-        <li><a href="books.html">All Books</a></li>
+        <li><a href="index.html#team">Teams</a></li>
+        <li><a href="index.html#popular">Popular</a></li>
+        <li><a href="index.html#featured">Featured</a></li>
+        <li><a href="allbooks.html">All Books</a></li>
       </ul>
-    </div>
   </nav>
 
-  <!---MOBILE MENU--->
-
-  <nav class="menumobile">
-    <div class="logo">
-      <img src="./images/logogradient1.png" alt="PM Book Club Logo">
-    </div>
-    <div class="text">
-      <div class="tagline">
-        A resource to help project managers discover books and ideas.
+  <section class="landing">
+    <div class="container">
+      <h1>Book Highlights and Recommendations for Tech Professionals</h1>
+      <div class="email_grab">
+        <p>Get notified when new books are added.</p>
+        <div class="email_input">
+          <input type="email" name="user_email" placeholder="YOUR EMAIL"></input><!--
+          --><button type="submit" name="submit_email">SUBMIT</button>
+        </div>
       </div>
-      <div class="navlinks">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="books.html">All Books</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!---MOBILE MENU END--->
-
-  <section class="featured">
-
-    <div class="feature fade" id="feature1">
-      <div class="descbox">
-        <h2>Becoming</h2>
-        <h3>by Michelle Obama</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque magna id diam scelerisque, vel elementum ante gravida. Etiam rutrum accumsan gravida. Vivamus mattis ornare nunc, in fermentum turpis tempus sit amet. Donec commodo diam sed arcu facilisis. Donec venenatis…
-          <a href="becoming.html">read more</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="feature fade" id="feature2">
-      <div class="descbox">
-        <h2>The Life-Changing Art of Tidying Up</h2>
-        <h3>by Marie Kondo</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque magna id diam scelerisque, vel elementum ante gravida. Etiam rutrum accumsan. Donec venenatis…
-          <a href="">read more</a>
-        </p>
-      </div>
-    </div>
-
-    <div class="arrow">
-      <img id="img-click" src="./images/slidearrow.png" alt="arrow" />
     </div>
   </section>
 
   <section class="about" id="about">
-    <div class="logo">
-      <img src="./images/logowhite.png" alt="PM Book Club Logo in White" />
-    </div>
-    <div class="text">
-      <h2>About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius orci efficitur suscipit fermentum. Vivamus at molestie lacus. Morbi iaculis ipsum malesuada risus consectetur, a interdum lectus tristique. Praesent condimentum pellentesque ligula, vel rhoncus massa consectetur nec. Phasellus ex nisi, dignissim sed elit id, pulvinar cursus arcu. Aliquam lacinia ligula ac vulputate dignissim. Donec a tempor mauris. Aliquam placerat efficitur lacus.</p>
+    <div class="container">
+      <div class="about_point">
+        <div class="about_img">
+          <img src="./images/about_discover.png" alt="Discover Graphic" />
+        </div>
+        <figcap>
+          <h3>Discover</h3>
+          <p>what leading product managers are reading</p>
+        </figcap>
+      </div>
+      <div class="about_point">
+        <div class="about_img">
+          <img src="./images/about_identify.png" alt="Identify Graphic" />
+        </div>
+        <figcap>
+          <h3>Identify</h3>
+          <p>each book's key learnings and main takeaways</p>
+        </figcap>
+      </div>
+      <div class="about_point">
+        <div class="about_img">
+          <img src="./images/about_determine.png" alt="Determine Graphic" />
+        </div>
+        <figcap>
+          <h3>Determine</h3>
+          <p>which books are worth reading in full</p>
+        </figcap>
+      </div>
     </div>
   </section>
 
-  <section class="bookshelf">
-    <h1>Recently Added Books</h1>
-    <div class="books">
+  <section class="team" id="team">
+    <div class="container">
+      <h2>Managed by the Authors of</h2>
+      <div class="authors">
+        <div class="author">
+          <div class="author_img">
+            <img src="./images/linkedin_parth.jpeg" alt="Parth Detroja Photo" />
+          </div>
+          <figcap>
+            <h3>Parth Detroja</h3>
+            <p>Product Manager at</p>
+          </figcap>
+        </div>
+        <div class="author">
+          <div class="author_img">
+            <img src="./images/linkedin_adi.jpeg" alt="Adi Agashe Photo" />
+          </div>
+          <figcap>
+            <h3>Adi Agashe</h3>
+            <p>Product Manager at</p>
+          </figcap>
+        </div>
+        <div class="author">
+          <div class="author_img">
+            <img src="./images/linkedin_neel.jpeg" alt="Nell Mehta Photo" />
+          </div>
+          <figcap>
+            <h3>Neel Mehta</h3>
+            <p>Product Manager at</p>
+          </figcap>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <figure class="book">
-          <a href="becoming.html">
+  <section class="popular" id="popular">
+    <div class="container">
+      <h2>Popular Books</h2>
+      <div class="bookrow">
+        <div class="book">
+          <div class="book_img">
             <img src="./images/cover_becoming.jpg" alt="Becoming by Michelle Obama Book Cover" />
-          </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Becoming</a></h4>
+          </div>
+          <figcap class="book_desc">
+            <h4>Becoming</h4>
             <h5>by Michelle Obama</h5>
-          </figcaption>
-        </figure>
-
-        <figure class="book">
-          <a href="">
+          </figcap>
+        </div>
+        <div class="book">
+          <div class="book_img">
+            <img src="./images/cover_leaderseat.jpg" alt="Leaders Eat Fast by Simon Sinek Book Cover" />
+          </div>
+          <figcap class="book_desc">
+            <h4>Leaders Eat Fast</h4>
+            <h5>by Simon Sinek</h5>
+          </figcap>
+        </div>
+        <div class="book">
+          <div class="book_img">
             <img src="./images/cover_tidyingup.jpg" alt="The Life-Changing Magic of Tidying Up by Marie Kondo Book Cover" />
-          </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The Life-Changing Magic of Tidying Up</a></h4>
+          </div>
+          <figcap class="book_desc">
+            <h4>The Life-Changing Magic of Tidying Up</h4>
             <h5>by Marie Kondo</h5>
-          </figcaption>
-        </figure>
-
-        <figure class="book">
-          <a href="">
-            <img src="./images/cover_7habits.jpg" alt="The 7 Habits of Highly Successful Effective People by Stephen R. Covey Book Cover" />
-          </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The 7 Habits of Highly Effective People</a></h4>
-            <h5>by Stephen R. Covey</h5>
-          </figcaption>
-        </figure>
-
-        <figure class="book">
-          <a href="">
-            <img src="./images/cover_fifthrisk.jpg" alt="The Fifth Risk by Michael Lewis Book Cover" />
-          </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The Fifth Risk</a></h4>
-            <h5>by Michael Lewis</h5>
-          </figcaption>
-        </figure>
-
-        <figure class="book">
-          <a href="">
+          </figcap>
+        </div>
+        <div class="book">
+          <div class="book_img">
+            <img src="./images/cover_radicalcandor.jpg" alt="Radical Candor by Kim Scott Book Cover" />
+          </div>
+          <figcap class="book_desc">
+            <h4>Radical Candor</h4>
+            <h5>by Kim Scott</h5>
+          </figcap>
+        </div>
+        <div class="book">
+          <div class="book_img">
             <img src="./images/cover_thinking.jpg" alt="Thinking, Fast and Slow by Daniel Kahneman Book Cover" />
-          </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Thinking, Fast and Slow</a></h4>
+          </div>
+          <figcap class="book_desc">
+            <h4>Thinking, Fast and Slow</h4>
             <h5>by Daniel Kahneman</h5>
-          </figcaption>
-        </figure>
-
+          </figcap>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="bookshelf bottomshelf">
-    <h1>Popular Books</h1>
-    <div class="books">
-
-      <figure class="book">
-        <a href="">
-          <img src="./images/cover_becoming.jpg" alt="Becoming by Michelle Obama Book Cover" />
-        </a>
-        <figcaption class="bookinfo">
-          <h4><a href="">Becoming</a></h4>
-          <h5>by Michelle Obama</h5>
-        </figcaption>
-      </figure>
-
-      <figure class="book">
-        <a href="">
-          <img src="./images/cover_leaderseat.jpg" alt="Leaders Eat Fast by Simon Sinek Book Cover" />
-        </a>
-        <figcaption class="bookinfo">
-          <h4><a href="">Leaders Eat Fast</a></h4>
-          <h5>by Simon Sinke</h5>
-        </figcaption>
-      </figure>
-
-      <figure class="book">
-        <a href="">
-          <img src="./images/cover_tidyingup.jpg" alt="The Life-Changing Magic of Tidying Up by Marie Kondo Book Cover" />
-        </a>
-        <figcaption class="bookinfo">
-          <h4><a href="">The Life-Changing Magic of Tidying Up</a></h4>
-          <h5>by Marie Kondo</h5>
-        </figcaption>
-      </figure>
-
-      <figure class="book">
-        <a href="">
-          <img src="./images/cover_radicalcandor.jpg" alt="Radical Candor by Kim Scott Book Cover" />
-        </a>
-        <figcaption class="bookinfo">
-          <h4><a href="">Radical Candor</a></h4>
-          <h5>by Kim Scott</h5>
-        </figcaption>
-      </figure>
-
-      <figure class="book">
-        <a href="">
-          <img src="./images/cover_thinking.jpg" alt="Thinking, Fast and Slow by Daniel Kahneman Book Cover" />
-        </a>
-        <figcaption class="bookinfo">
-          <h4><a href="">Thinking, Fast and Slow</a></h4>
-          <h5>by Daniel Kahneman</h5>
-        </figcaption>
-      </figure>
-
+  <section class="featured" id="featured">
+    <div class="container">
+      <h2>Book of the Month</h2>
+      <div class="featured_book">
+        <div class="featured_img">
+        </div>
+        <div class="featured_desc">
+          <h3>Becoming</h3>
+          <h4>by Michelle Obama</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque magna id diam scelerisque, vel elementum ante gravida. Etiam rutrum accumsan gravida. Vivamus mattis ornare nunc, in fermentum turpis tempus sit amet. Donec commodo diam sed arcu facilisis, efficitur fermentum dolor mattis. Donec venenatis</p>
+          <div class="seemore">
+            See More
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <section class="footer">
+  </footer>
 
 </body>
 
