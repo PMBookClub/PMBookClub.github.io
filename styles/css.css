@@ -20,12 +20,13 @@
     font-family: "Lato";
     src: url("./Lato-Italic.ttf");
     font-style: italic;
+    font-weight: normal;
 }
 
 h1 {
   font-family: "Roboto";
-  font-size: 46px;
-  letter-spacing: 1px;
+  font-size: 32px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -37,11 +38,35 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Lato";
+  font-weight: normal;
+  font-size: 20px;
+}
+
 p {
   font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
+}
+
+.style1 {
+  font-size: 46px;
+  color: #fff;
+}
+
+.style2 {
+  font-size: 46px;
+  color: #FFA200;
 }
 
 figcap {
@@ -107,7 +132,6 @@ nav ul {
 
 nav ul li {
   margin: 0 12px;
-  /* background-color: red; */
   font-family: "Lato";
   font-size: 14px;
   text-transform: uppercase;
@@ -117,6 +141,35 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  position: relative;
+}
+
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -3px;
+  background-color: #FFA200;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav ul li a.active:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .landing {
@@ -140,12 +193,11 @@ nav ul li a {
   width: 45%;
   margin-right: 5%;
   flex-wrap: wrap;
-  /* background-color: yellow; */
 }
 
 .landing h1 {
   text-align: center;
-  color: #fff;
+  color: #f9f9f9;
   text-shadow: 2px 2px 8px #000000;
   line-height: 72px;
 }
@@ -165,7 +217,6 @@ nav ul li a {
 }
 
 .email_input {
-  /* background-color: gray; */
   margin: auto;
   display: flex;
 }
@@ -175,7 +226,7 @@ nav ul li a {
   height: 50px;
   padding: 0 25px;
   border: none;
-  border-radius: 25px 0 0 25px;
+  border-radius: 50px 0 0 50px;
 }
 
 .email_input input[type="email"] {
@@ -186,7 +237,7 @@ nav ul li a {
   width: 150px;
   height: 50px;
   border: none;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 50px 50px 0;
   background-color: #46B6E5;
   font-family: "Roboto";
   font-size: 16px;
@@ -278,8 +329,16 @@ nav ul li a {
   background-color: #f9f9f9;
 }
 
+.popular .container a {
+  text-decoration: none;
+}
+
 .popular .container h2 {
   margin-bottom: 4%;
+}
+
+.popular .container h4 {
+  color: #000;
 }
 
 .bookrow {
@@ -318,4 +377,114 @@ nav ul li a {
   justify-content: center;
   text-align: center;
   background-color: #fff;
+}
+
+.featured .container h2{
+  margin-bottom: 4%;
+}
+
+.featured_book {
+  display: flex;
+  margin: auto;
+  width: 1100px;
+}
+
+.featured_img {
+  flex: 1;
+  height: 400px;
+  overflow: hidden;
+}
+
+.featured_img img {
+  height: 100%;
+}
+
+.featured_desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F9F9;
+}
+
+.featured_desc p {
+  margin: 24px;
+}
+
+.featured_desc h3, .featured_desc h4 {
+  margin: 6px 24px;
+}
+
+.seemore {
+  background-color: #46B6E5;
+  width: 160px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seemore:hover {
+  background-color: #1F9BD0;
+}
+
+.featured_desc a {
+  font-family: "Roboto";
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.featured_desc h4 {
+  color: #888888;
+}
+
+.footer {
+  background-color: #132F44;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px #4B6375;
+}
+
+.footer ul li {
+  margin: 0 12px;
+  font-family: "Lato";
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer ul li a:hover{
+  text-decoration: underline;
+}
+
+.copyright {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Lato";
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }
