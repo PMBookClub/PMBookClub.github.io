@@ -14,45 +14,25 @@
 
   <nav class="menudesk">
     <div class="logo">
-      <img src="./images/logogradient1.png" alt="PM Book Club Logo">
+      <img src="./images/logo.png" alt="PM Book Club Logo">
     </div>
-    <div class="tagline">
-      A resource to help project managers discover books and ideas.
-    </div>
-    <div class="navlinks">
-      <ul>
+    <ul>
         <li class="active"><a href="index.html">Home</a></li>
         <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#team">Teams</a></li>
+        <li><a href="index.html#popular">Popular</a></li>
+        <li><a href="index.html#featured">Featured</a></li>
         <li><a href="books.html">All Books</a></li>
       </ul>
-    </div>
   </nav>
 
-  <!---MOBILE MENU--->
+  <section class="buffer_section">
+  </section>
 
-  <nav class="menumobile">
-    <div class="logo">
-      <img src="./images/logogradient1.png" alt="PM Book Club Logo">
-    </div>
-    <div class="text">
-      <div class="tagline">
-        A resource to help project managers discover books and ideas.
-      </div>
-      <div class="navlinks">
-        <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="books.html">All Books</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!---MOBILE MENU END--->
-
-  <section class="search">
+  <section class="search_section">
     <form class="searchbar">
       <input id="searchInput" type="text" placeholder="Search for book title or author...">
+      <button name="submitSearch" type="button">Search</button>
     </form>
     <div class="filter">
 
@@ -60,129 +40,176 @@
   </section>
 
 
-    <section class="bookshelf bottomshelf">
-      <div class="allbooks" id="allbooks">
+    <section class="bookshelf">
+      <div class="container">
 
-        <figure class="book">
+        <div class="bookrow">
+
           <a href="becoming.html">
-            <img src="./images/cover_becoming.jpg" alt="Becoming by Michelle Obama Book Cover" />
+          <div class="book">
+            <div class="book_img">
+              <img src="./images/cover_becoming.jpg" alt="Becoming by Michelle Obama Book Cover" />
+            </div>
+            <div class="book_desc">
+              <h4>Becoming</h4>
+              <h5>by Michelle Obama</h5>
+            </div>
+          </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="becoming.html">Becoming</a></h4>
-            <h5>by Michelle Obama</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
+
           <a href="">
-            <img src="./images/cover_tidyingup.jpg" alt="The Life-Changing Magic of Tidying Up by Marie Kondo Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_tidyingup.jpg" alt="The Life-Changing Magic of Tidying Up by Marie Kondo Book Cover" />
+              </div>
+              <div class="book_desc">
+                <h4>The Life-Changing Magic of Tidying Up</h4>
+                <h5>by Marie Kondo</h5>
+              </div>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The Life-Changing Magic of Tidying Up</a></h4>
-            <h5>by Marie Kondo</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_7habits.jpg" alt="The 7 Habits of Highly Successful Effective People by Stephen R. Covey Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_7habits.jpg" alt="The 7 Habits of Highly Successful Effective People by Stephen R. Covey Book Cover" />
+              </div>
+              <div class="book_desc">
+                <h4>The 7 Habits of Highly Effective People</h4>
+                <h5>by Stephen R. Covey</h5>
+              </div>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The 7 Habits of Highly Effective People</a></h4>
-            <h5>by Stephen R. Covey</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_fifthrisk.jpg" alt="The Fifth Risk by Michael Lewis Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_fifthrisk.jpg" alt="The Fifth Risk by Michael Lewis Book Cover" />
+              </div>
+              <div class="book_desc">
+                <h4>The Fifth Risk</h4>
+                <h5>by Michael Lewis</h5>
+              </div>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The Fifth Risk</a></h4>
-            <h5>by Michael Lewis</h5>
-          </figcaption>
-        </figure>
+        </div>
 
-        <figure class="book">
+        <div class="bookrow">
           <a href="">
-            <img src="./images/cover_thinking.jpg" alt="Thinking, Fast and Slow by Daniel Kahneman Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_thinking.jpg" alt="Thinking, Fast and Slow by Daniel Kahneman Book Cover" />
+              </div>
+              <div class="book_desc">
+                <h4>Thinking, Fast and Slow</h4>
+                <h5>by Daniel Kahneman</h5>
+              </div>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Thinking, Fast and Slow</a></h4>
-            <h5>by Daniel Kahneman</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_bravelove.jpg" alt="Brave Love by Lisa Leonard Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_bravelove.jpg" alt="Brave Love by Lisa Leonard Book Cover" />
+              </div>
+              <div class="book_desc">
+                <h4>Brave Love</h4>
+                <h5>by Lisa Leonard</h5>
+              </div>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Brave Love</a></h4>
-            <h5>by Lisa Leonard</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_radicalcandor.jpg" alt="Radical Candor by Kim Scott Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_radicalcandor.jpg" alt="Radical Candor by Kim Scott Book Cover" />
+              </div>
+              <div class="book_desc">
+                <h4>Radical Candor</h4>
+                <h5>by Kim Scott</h5>
+              </div>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Radical Candor</a></h4>
-            <h5>by Kim Scott</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_leaderseat.jpg" alt="Leaders Eat Fast by Simon Sinek Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_leaderseat.jpg" alt="Leaders Eat Fast by Simon Sinek Book Cover" />
+              </div>
+            </div>
+            <div class="book_desc">
+              <h4>Leaders Eat Fast</h4>
+              <h5>by Simon Sinke</h5>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Leaders Eat Fast</a></h4>
-            <h5>by Simon Sinke</h5>
-          </figcaption>
-        </figure>
+        </div>
 
-        <figure class="book">
+        <div class="bookrow">
           <a href="">
-            <img src="./images/cover_designingyourilfe.jpg" alt="Designing Your Life by Bill Burnet Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_designingyourilfe.jpg" alt="Designing Your Life by Bill Burnet Book Cover" />
+              </div>
+            </div>
+            <div class="book_desc">
+              <h4>Designing Your Life</h4>
+              <h5>by Bill Burnet</h5>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Designing Your Life</a></h4>
-            <h5>by Bill Burnet</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_culturecode.jpg" alt="The Culture Code by Daniel Coyle Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_culturecode.jpg" alt="The Culture Code by Daniel Coyle Book Cover" />
+              </div>
+            </div>
+            <div class="book_desc">
+              <h4>The Culture Code</h4>
+              <h5>by Daniel Coyle</h5>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">The Culture Code</a></h4>
-            <h5>by Daniel Coyle</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_essentialism.jpg" alt="Essentialism by GregMcKeown Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_essentialism.jpg" alt="Essentialism by GregMcKeown Book Cover" />
+              </div>
+            </div>
+            <div class="book_desc">
+              <h4>Essentiaism</h4>
+              <h5>by Greg McKeown</h5>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Essentiaism</a></h4>
-            <h5>by Greg McKeown</h5>
-          </figcaption>
-        </figure>
 
-        <figure class="book">
           <a href="">
-            <img src="./images/cover_rednotice.jpg" alt="Red Notice by Bill Browder Book Cover" />
+            <div class="book">
+              <div class="book_img">
+                <img src="./images/cover_rednotice.jpg" alt="Red Notice by Bill Browder Book Cover" />
+              </div>
+            </div>
+            <div class="book_desc">
+              <h4>Red Notice</h4>
+              <h5>by Bill Browder</h5>
+            </div>
           </a>
-          <figcaption class="bookinfo">
-            <h4><a href="">Red Notice</a></h4>
-            <h5>by Bill Browder</h5>
-          </figcaption>
-        </figure>
 
+        </div>
+
+      </div>
+    </section>
+
+    <section class="footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#popular">Popular</a></li>
+          <li><a href="index.html#featured">Featured</a></li>
+          <li><a href="books.html">All Books</a></li>
+        </ul>
+      <div class="copyright">
+        © 2019 PM Book Club. All rights reserved.
       </div>
     </section>
 
