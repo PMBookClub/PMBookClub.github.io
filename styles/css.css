@@ -105,8 +105,9 @@ p {
   font-size: 16px;
 }
 
-nav {
+.navbar {
   height: 100px;
+  overflow: hidden;
   width: 100%;
   z-index: 9999;
   position: fixed;
@@ -115,24 +116,26 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: #132F44;
+  transition: top 0.5s;
 }
 
-nav .logo {
+.navbar .logo {
   height: 84px;
 }
 
-nav .logo img {
+.navbar .logo img {
   height: 100%;
 }
 
-nav ul {
+.navbar ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-nav ul li {
+.navbar ul li {
   margin: 0 12px;
   font-family: "Lato";
   font-size: 14px;
@@ -140,13 +143,13 @@ nav ul li {
   letter-spacing: 2px;
 }
 
-nav ul li a {
+.navbar ul li a {
   color: #fff;
   text-decoration: none;
   position: relative;
 }
 
-nav ul li a:before {
+.navbar ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -162,13 +165,13 @@ nav ul li a:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-nav ul li a:hover:before {
+.navbar ul li a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-nav ul li a.active:before {
+.navbar ul li a.active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -335,6 +338,7 @@ nav ul li a.active:before {
 
 .popular .container a {
   text-decoration: none;
+  margin: 0 20px;
 }
 
 .popular .container h2 {
@@ -351,7 +355,7 @@ nav ul li a.active:before {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .book:hover {
@@ -498,12 +502,38 @@ nav ul li a.active:before {
 }
 
 .description .container {
+  background-attachment: fixed;
+  background-size: cover;
   margin: auto;
   padding: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.description .bg1 {
+  background-image: url("../images/background_1.png");
+}
+
+.description .bg2 {
+  background-image: url("../images/background_2.png");
+}
+
+.description .bg3 {
+  background-image: url("../images/background_3.png");
+}
+
+.description .bg4 {
+  background-image: url("../images/background_4.png");
+}
+
+.description .bg5 {
+  background-image: url("../images/background_5.png");
+}
+
+.description .bg6 {
+  background-image: url("../images/background_6.png");
 }
 
 .cover_img {
@@ -520,6 +550,7 @@ nav ul li a.active:before {
 .description .text {
   width: 580px;
   margin: 50px;
+  color: #c9c9c9;
 }
 
 .description h3 {
@@ -538,7 +569,7 @@ nav ul li a.active:before {
   font-weight: normal;
   font-style: italic;
   font-size: 20px;
-  color: #888888;
+  color: #fff;
   margin: 20px 0;
 }
 
@@ -769,12 +800,58 @@ nav ul li a.active:before {
   align-items: center;
 }
 
+.review .content {
+  display: flex;
+  width: 800px;
+}
+
+.review .review_text {
+  text-align: justify;
+}
+
+.review .sidebar .rating {
+  margin: 24px;
+  padding: 24px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.review .sidebar .rating img {
+  margin: 24px auto;
+}
+
+.review .sidebar .reviewer {
+    margin: 24px;
+    padding: 24px;
+    background-color: #f9f9f9;
+}
+
+.review .sidebar .author_img {
+  width: 160px;
+  height: 160px;
+  margin: 24px auto;
+}
+
+.review .sidebar .author_img img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+.review .sidebar .book_desc h3 {
+  margin-bottom: 0;
+}
+
+.review .sidebar .book_desc p {
+  margin: 12px;
+}
+
+
 .review h3 {
   margin-bottom: 48px;
 }
 
 .review p {
-  width: 800px;
   margin: 24px;
   font-size: 16px;
   line-height: 24px;
@@ -848,6 +925,10 @@ nav ul li a.active:before {
 
 .bookshelf .bookrow:last-of-type {
   margin-bottom: 0;
+}
+
+.bookshelf .bookrow a {
+  margin: 0 25px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -937,5 +1018,4 @@ nav ul li a.active:before {
   .featured_desc a {
     margin-bottom: 24px;
   }
-
 }
