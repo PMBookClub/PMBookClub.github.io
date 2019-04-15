@@ -6,18 +6,18 @@
   <title>PM Book Club | Outliers</title>
   <link href="./styles/css.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="scripts/navscroll.js"></script>
 </head>
 
 <body>
 
-  <nav class="navbar" id="navbar">
+  <nav class="navbar navbar-fixed-top" id="navbar">
     <div class="logo">
-      <img src="./images/logo.png" alt="PM Book Club Logo">
+      <img src="./images/logowhite.png" alt="PM Book Club Logo">
     </div>
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="index.html#about">About</a></li>
         <li><a href="index.html#team">Teams</a></li>
         <li><a href="index.html#popular">Popular</a></li>
@@ -28,66 +28,44 @@
 
   <section class="description">
     <div class="container bg4">
-      <div class="cover_img">
-        <img src="./images/cover_outliers.jpg" alt="Outliers by Malcolm Gladwell Book Cover" />
-      </div>
-      <div class="text">
-        <h3>Outliers</h3>
-        <h5>The Story of Success</h5>
-        <h4>by Malcolm Gladwell</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus convallis fringilla. Aenean mollis dapibus purus in laoreet. Fusce pulvinar congue diam, nec mollis magna fermentum ac. Cras porta ante urna, nec interdum libero congue et. Mauris dignissim, lectus et vulputate egestas, quam nulla commodo ligula, ut commodo sapien justo in mi.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="overview">
-    <div class="left">
-      <h3>Reviewer</h3>
-      <div class="reviewer_img">
-        <img src="./images/linkedin_parth.jpeg" alt="Reviewer Parth Detroja" />
-      </div>
-      <div class="reviewer_info">
-        <h4>Parth Detroja</h4>
-        <p>Product Manager at</p>
-        <p>Facebook</p>
-      </div>
-    </div>
-    <div class="middle">
-      <a href="#insights">
-        <div class="top">
-          <div class="icon">
-            <img src="./images/lightbulblogowhite.png" alt="Key Insights Light Bulb Icon" />
+      <div class="top">
+        <div class="left">
+          <div class="cover_img">
+            <img src="./images/cover_outliers.jpg" alt="Outliers by Malcolm Gladwell Book Cover" />
           </div>
-          <h3>Key Insights</h3>
+          <a href="https://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell-ebook/dp/B001ANYDAO/ref=sr_1_1?crid=1Y0RY8IIN00BT&keywords=outliers+malcolm+gladwell&qid=1555194864&s=books&sprefix=outliers%2Cstripbooks%2C177&sr=1-1" target="_blank">
+            <div class="buy">
+              <img src="./images/amazonwhite.png" alt="Amazon" />
+            </div>
+          </a>
         </div>
-      </a>
-      <a href="#quotes">
-        <div class="center">
-          <div class="icon">
-            <img src="./images/quotewhite.png" alt="Quotable Quotes Icon" />
-          </div>
-          <h3>Quotable Quotes</h3>
+        <div class="text">
+          <h3>Outliers</h3>
+          <h5>The Story of Success</h5>
+          <h4>by Malcolm Gladwell</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus convallis fringilla. Aenean mollis dapibus purus in laoreet. Fusce pulvinar congue diam, nec mollis magna fermentum ac. Cras porta ante urna, nec interdum libero congue et. Mauris dignissim, lectus et vulputate egestas, quam nulla commodo ligula, ut commodo sapien justo in mi.</p>
         </div>
-      </a>
-      <a href="#review">
-        <div class="bottom">
-          <div class="icon">
-            <img src="./images/booklogowhite.png" alt="Book Review Book Icon" />
-          </div>
-          <h3>Book Review</h3>
-        </div>
-      </a>
-    </div>
-    <div class="right">
-      <div class="book_img">
-        <img src="./images/cover_misbehaving.jpg" alt="Misbehaving by Richard H. Thaler Book Cover" />
       </div>
-      <h3>Read the Full Book</h3>
-      <a href="https://www.amazon.com/Misbehaving-Behavioral-Economics-Richard-Thaler/dp/039335279X" target="_blank">
-        <div class="buy_button">
-          Buy on Amazon
-        </div>
-      </a>
+      <div class="overview">
+        <a href="#insights">
+          <div class="button">
+            <img src="./images/lightbulblogowhite.png"  alt="Key Insight Icon" />
+            Key Insights
+          </div>
+        </a>
+        <a href="#quotes">
+          <div class="button">
+            <img src="./images/quotewhite.png"  alt="Quotable Quotes Icon" />
+            Quotable Quotes
+          </div>
+        </a>
+        <a href="#review">
+          <div class="button">
+            <img src="./images/booklogowhite.png"  alt="Review Icon" />
+            Review
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 

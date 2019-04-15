@@ -115,8 +115,11 @@ p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #132F44;
-  transition: top 0.5s;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #46B6E5 !important;
+  transition: background-color 200ms linear;
 }
 
 .navbar .logo {
@@ -127,29 +130,26 @@ p {
   height: 100%;
 }
 
-.navbar ul {
-  list-style-type: none;
+.navbar .links{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
-.navbar ul li {
+.navbar .links a {
   margin: 0 12px;
   font-family: "Lato";
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.navbar ul li a {
   color: #fff;
   text-decoration: none;
   position: relative;
 }
 
-.navbar ul li a:before {
+.navbar .links a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -165,22 +165,76 @@ p {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar ul li a:hover:before {
+.navbar .links a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-.navbar ul li a.active:before {
+.navbar .links a .active:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+  .navbar a {
+    display: none;
+  }
+
+  .navbar .icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .icon i {
+    font-size: 24px;
+  }
+
+  .navbar .icon:before {
+    bottom: 25px !important;
+  }
+
+  .responsive {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #46B6E5;
+  }
+
+  .responsive .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .responsive .logo {
+    margin-top: 24px;
+  }
+
+  .responsive a {
+    display: flex !important;
+    margin-top: 24px !important;
+  }
+
+  .responsive a:last-child {
+    margin-top: 0 !important;
+  }
 }
 
 .landing {
   height: 100vh;
-  margin: 0;
-  padding: 0;
   background-image: url("../images/leading_img.png");
   background-attachment: fixed;
   display: flex;
@@ -196,9 +250,6 @@ p {
   padding: 100px;
   display: flex;
   flex-direction: column;
-}
-
-.landing .container {
   width: 45%;
   margin-right: 5%;
   flex-wrap: wrap;
@@ -220,6 +271,7 @@ p {
 
 .email_grab p {
   color: #fff;
+  text-align: center;
   font-size: 18px;
   letter-spacing: 1px;
   margin: 24px 0;
@@ -468,6 +520,7 @@ p {
   height: 80px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-bottom: solid 1px #4B6375;
@@ -504,12 +557,20 @@ p {
 .description .container {
   background-attachment: fixed;
   background-size: cover;
+  max-width: 1400px;
   margin: auto;
   padding: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.description .top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10% auto;
 }
 
 .description .bg1 {
@@ -547,10 +608,23 @@ p {
   overflow: hidden;
 }
 
+.left .buy {
+  background-color: #000;
+  padding: 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.left .buy:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .description .text {
   width: 580px;
   margin: 50px;
-  color: #c9c9c9;
+  color: #f9f9f9;
 }
 
 .description h3 {
@@ -577,47 +651,35 @@ p {
   margin: 20px 0;
 }
 
+.description a {
+  text-decoration: none;
+}
+
 .overview {
   display: flex;
-  height: 600px;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.overview .left {
-  flex: 1;
+.overview .button {
+  width: 180px;
+  margin: auto 24px;
+  border: 1px solid #fff;
+  padding: 12px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F9F9F9;
-  margin: 0 5px;
-}
-
-.overview .left h4 {
-  text-transform: uppercase;
-}
-
-.reviewer_img {
-  width: 200px;
-  height: 200px;
-  margin: 48px auto;
-}
-
-.reviewer_img img {
-  width: 100%;
-  border-radius: 100px;
-}
-
-.reviewer_info {
-  text-align: center;
-}
-
-.overview .middle {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-family: "Lato";
   color: #fff;
+}
+
+.overview .button:hover {
+  background-color: rgba(225, 225, 225, .2);
+}
+
+.overview .button img {
+  height: 28px;
+  margin-right: 12px;
 }
 
 .icon {
@@ -857,12 +919,19 @@ p {
   line-height: 24px;
 }
 
-.buffer_section {
-  height: 100px;
+.subsection .section_icon {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.subsection .section_icon img {
+  margin-right: 24px;
 }
 
 .search_section {
-  background-color: #f9f9f9;
+  background-color: #132F44;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -944,25 +1013,6 @@ p {
 
 }
 
-@media screen and (max-width: 1000px) {
-  .overview {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .overview .left, .overview .right {
-    padding: 100px 0;
-  }
-
-  .overview .middle {
-    margin: 5px;
-  }
-
-  .insights_list p, .quote, .review p {
-    width: 90%;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .description .container {
     flex-direction: column;
@@ -978,26 +1028,58 @@ p {
   .searchbar button {
     padding: 0 12px;
   }
+
+  .landing .container, .about .container, .team .container, .popular .container, .featured .container {
+    padding: 100px;
+  }
+
+
+    .landing h1 {
+      letter-spacing: 0;
+      line-height: 54px;
+    }
+
+    .style1, .style2 {
+      font-size: 36px;
+      letter-spacing: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
 
+  .landing {
+    height: 600px;
+  }
+
+  .landing .container {
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
   .landing h1 {
+    font-size: 24px;
     letter-spacing: 0;
-    line-height: 54px;
+    line-height: 42px;
   }
 
   .style1, .style2 {
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0;
   }
 
-  .email_input {
-    margin: 5%;
+  .email_grab {
+    width: 100%;
   }
 
   .email_input input {
-    width: 100%;
+    padding: 0 12px;
+    width: 60%;
+  }
+
+  .email_input button {
+    padding: 0 12px;
+    width: 40%;
   }
 
   .featured_book {
