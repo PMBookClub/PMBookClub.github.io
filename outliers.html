@@ -16,14 +16,17 @@
     <div class="logo">
       <img src="./images/logowhite.png" alt="PM Book Club Logo">
     </div>
-    <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#team">Teams</a></li>
-        <li><a href="index.html#popular">Popular</a></li>
-        <li><a href="index.html#featured">Featured</a></li>
-        <li><a href="books.html">All Books</a></li>
-      </ul>
+    <div class="links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#team">Teams</a>
+        <a href="index.html#popular">Popular</a>
+        <a href="index.html#featured">Featured</a>
+        <a href="books.html">All Books</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
   </nav>
 
   <section class="description">
@@ -61,8 +64,8 @@
         </a>
         <a href="#review">
           <div class="button">
-            <img src="./images/booklogowhite.png"  alt="Review Icon" />
-            Review
+            <img src="./images/relevancewhite.png"  alt="Relevance Icon" />
+            Relevance
           </div>
         </a>
       </div>
@@ -76,18 +79,18 @@
       </div>
       <h3>Key Insights</h3>
       <div class="insights_list">
-        <div class="bullet_point">
-          1
+        <div class="subheading">
+          Subheading 1
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum dui sapien, ut feugiat lorem elementum vel. Nam eget orci consequat, viverra lacus ut, suscipit ex. Vivamus scelerisque nulla vel nulla lobortis.</p>
 
-        <div class="bullet_point">
-          2
+        <div class="subheading">
+          Subheading 2
         </div>
         <p>Sed vel est sapien. Nullam vitae nisi gravida, feugiat odio at, mollis sapien.</p>
 
-        <div class="bullet_point">
-          3
+        <div class="subheading">
+          Subheading 3
         </div>
         <p>Ut varius sit amet mi vel accumsan. Fusce maximus dictum bibendum. Praesent ultrices augue felis, nec sollicitudin turpis interdum a. Cras justo tellus, tempor vel tortor vitae, malesuada faucibus lacus. Mauris rutrum varius mi et eleifend. Donec feugiat a enim et eleifend.</p>
       </div>
@@ -118,10 +121,17 @@
   <section class="review" id="review">
     <div class="container">
       <div class="section_icon">
-        <img src="./images/booklogoblack.png" alt="Book in Black"/>
+        <img src="./images/relevanceblack.png" alt="Relevance Section"/>
       </div>
-      <h3>Book Review</h3>
+      <h3>Relevance</h3>
 
+    <div class="subsection">
+      <div class="section_icon">
+        <img src="./images/booklogoblack.png" alt="Book Review Icon"/>
+        <h4>
+          Review
+        </h4>
+      </div>
       <div class="content">
       <div class="review_text">
       <p>Maecenas scelerisque, urna vitae scelerisque venenatis, leo sapien sagittis lacus, vel consequat magna nisi sit amet lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In lectus est, fermentum eu convallis at, maximus vitae eros. Etiam fringilla cursus enim, euismod posuere arcu vulputate quis. Quisque eu consectetur ante. Proin lorem mi, tempus in justo non, pulvinar placerat sapien. Ut nec varius tortor. Nunc imperdiet in erat a rutrum. Mauris eget eros ac libero suscipit maximus id mollis eros. In ac massa vulputate, consequat nibh vitae, hendrerit magna. Cras vel purus lorem.
@@ -144,10 +154,50 @@
           <div class="book_desc">
             <h3>Parth Detroja</h3>
             <p>Product Manager at</p>
+            <img src="./images/fblogo.png" alt="Facebook" />
           </div>
         </div>
       </div>
     </div>
+
+    <div class="subsection">
+      <div class="section_icon">
+        <img src="./images/learnblack.png" alt="Learn Icon"/>
+        <h4>
+          What You Will Learn
+        </h4>
+      </div>
+      <div class="content">
+      <div class="review_text">
+      <p>Donec convallis sodales placerat. Donec sed fermentum metus. Aenean a ligula imperdiet, laoreet ipsum at, ultricies massa. Donec vitae dui non elit sollicitudin laoreet. Vestibulum turpis odio, condimentum vitae dui ut, efficitur aliquet turpis. Proin scelerisque, erat a egestas aliquet, nibh lacus accumsan velit, quis dignissim erat risus non neque. Cras sagittis dolor enim, id rhoncus urna auctor gravida. Morbi pellentesque erat tincidunt nulla porttitor pulvinar. Curabitur porta gravida dapibus. Curabitur et diam in ligula tempus fringilla.
+      </p>
+
+      <p>Suspendisse potenti. Vivamus ut rutrum ipsum. Praesent diam mi, luctus at metus quis, fringilla bibendum lacus. Etiam imperdiet odio eu quam aliquet rutrum. Sed egestas tristique arcu, nec luctus velit consectetur eu. Proin molestie tempus tellus, et mattis sapien consectetur ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id ultrices nibh, a dictum ante.
+      </p>
+      </div>
+    </div>
+
+    <div class="subsection">
+      <div class="section_icon">
+        <img src="./images/whoblack.png" alt="Who Should Read This Icon"/>
+        <h4>
+          Who Should Read This
+        </h4>
+      </div>
+      <div class="content">
+      <div class="review_text">
+      <p>Maecenas scelerisque, urna vitae scelerisque venenatis, leo sapien sagittis lacus, vel consequat magna nisi sit amet lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In lectus est, fermentum eu convallis at, maximus vitae eros. Etiam fringilla cursus enim, euismod posuere arcu vulputate quis. Quisque eu consectetur ante. Proin lorem mi, tempus in justo non, pulvinar placerat sapien. Ut nec varius tortor. Nunc imperdiet in erat a rutrum. Mauris eget eros ac libero suscipit maximus id mollis eros. In ac massa vulputate, consequat nibh vitae, hendrerit magna. Cras vel purus lorem.
+      </p>
+
+      <p>Suspendisse potenti. Vivamus ut rutrum ipsum. Praesent diam mi, luctus at metus quis, fringilla bibendum lacus. Etiam imperdiet odio eu quam aliquet rutrum. Sed egestas tristique arcu, nec luctus velit consectetur eu. Proin molestie tempus tellus, et mattis sapien consectetur ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id ultrices nibh, a dictum ante.
+      </p>
+      </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
     </div>
   </section>
 
