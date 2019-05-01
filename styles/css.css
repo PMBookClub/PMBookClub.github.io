@@ -974,7 +974,6 @@ p {
   }
 
   .landing .container {
-    margin: 50px;
     justify-content: center;
     align-items: center;
   }
@@ -1158,6 +1157,7 @@ p {
   .landing .container {
     width: 100%;
     margin-right: 0;
+    padding: 12%;
   }
 
 }
