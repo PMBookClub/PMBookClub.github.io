@@ -185,6 +185,7 @@ p {
   height: 100vh;
   background-image: url("../images/leading_img.png");
   background-attachment: fixed;
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -515,7 +516,7 @@ p {
 .description .container {
   background-attachment: fixed;
   background-size: cover;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: auto;
   padding: 10%;
   display: flex;
@@ -535,26 +536,32 @@ p {
 
 .description .bg1 {
   background-image: url("../images/background_1.png");
+  background-size: cover;
 }
 
 .description .bg2 {
   background-image: url("../images/background_2.png");
+  background-size: cover;
 }
 
 .description .bg3 {
   background-image: url("../images/background_3.png");
+  background-size: cover;
 }
 
 .description .bg4 {
   background-image: url("../images/background_4.png");
+  background-size: cover;
 }
 
 .description .bg5 {
   background-image: url("../images/background_5.png");
+  background-size: cover;
 }
 
 .description .bg6 {
   background-image: url("../images/background_6.png");
+  background-size: cover;
 }
 
 .cover_img {
@@ -568,10 +575,17 @@ p {
   overflow: hidden;
 }
 
-.left .buy {
-  background-color: #FF8E00;
+.description .left  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buy {
+  background-color: #000;
   margin-top: 24px;
   padding: 12px;
+  width: 200px;
   border-radius: 24px;
   color: #fff;
   display: flex;
@@ -579,8 +593,8 @@ p {
   box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
 }
 
-.left .buy:hover {
-  background-color: #FFA200;
+.buy:hover {
+  background-color: #131314;
 }
 
 .description .text {
