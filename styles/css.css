@@ -103,7 +103,7 @@ p {
   position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -121,6 +121,7 @@ p {
 }
 
 .navbar .links{
+  margin-right: 50px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -520,7 +521,6 @@ p {
 .description .container {
   background-attachment: fixed;
   background-size: cover;
-  /* max-width: 1400px; */
   margin: auto;
   padding: 10%;
   display: flex;
@@ -998,10 +998,27 @@ p {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 50px;
+@media screen and (max-width: 400px) {
+  .landing h1 {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 80px !important;
   }
+
+  .email_grab button {
+    height: 30px;
+  }
+
+  .email_grab input {
+    height: 30px;
+  }
+
+  .email_grab input[type="email"] {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .quote {
     width: 98%;
   }
@@ -1012,12 +1029,6 @@ p {
   .landing .container {
     justify-content: center;
     align-items: center;
-  }
-
-  .landing h1 {
-    font-size: 24px;
-    letter-spacing: 0;
-    line-height: 42px;
   }
 
   .email_grab {
@@ -1034,12 +1045,61 @@ p {
     width: 40%;
   }
 
-  .landing .container, .about .container, .team .container, .popular .container, .featured .container {
-    padding: 6%;
+  .about .container, .team .container, .popular .container, .featured .container {
+    padding: 50px;
+  }
+
+  .landing h1 {
+    font-size: 24px;
+    line-height: 32px !important;
+    margin: 150px 50px 50px;
+    letter-spacing: 0;
+    line-height: 42px !important;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .about_point {
+    width: 100%;
+  }
+
+  .about_img {
+    width: 90%;
+  }
+
+  .about_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .landing .container {
+    flex-direction: row;
+  }
+
+  .email_grab {
+    margin: 0;
+  }
+
+  .email_grab p {
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 800px) {
+
+  .navbar .icon {
+    margin-right: 50px !important;
+  }
+
+  .responsive .icon {
+    margin-right: 12px !important;
+  }
+
+  .navbar .links {
+    margin: 0;
+  }
 
   .navbar a {
     display: none;
@@ -1188,7 +1248,6 @@ p {
   .landing .container {
     width: 100%;
     margin-right: 0;
-    padding: 12%;
   }
 
   .email_grab {
