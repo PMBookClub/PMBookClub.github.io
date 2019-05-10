@@ -1222,6 +1222,10 @@ p {
   .description .text {
     width: 90%;
   }
+  .landing {
+    background-image: url("../images/leading_img_center.png");
+    background-position: center center;
+  }
 }
 
 @media screen and (max-width: 1164px) {
