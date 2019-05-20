@@ -348,7 +348,7 @@ p {
 
 .popular .container a {
   text-decoration: none;
-  margin: 0 20px;
+  /* margin: 0 20px; */
 }
 
 .popular .container h2 {
@@ -366,6 +366,10 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.book {
+  margin: 0 20px;
 }
 
 .book:hover {
