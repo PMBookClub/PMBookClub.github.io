@@ -1064,6 +1064,14 @@ p {
     line-height: 42px !important;
   }
 
+  .landing {
+    background-image: url("../images/leading_img_600.jpg");
+    background-position: center center;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+  }
+
   .about .container {
     flex-direction: column;
   }
