@@ -196,12 +196,14 @@ p {
 }
 
 .landing h1 {
-  text-align: center;
+  align-self: flex-end;
+  text-align: right;
   color: #f9f9f9;
   text-shadow: 2px 2px 8px #000000;
   font-size: 36px;
   line-height: 72px;
-  max-width: 900px;
+  max-width: 575px;
+  padding: 50px;
 }
 
 .email_grab {
@@ -210,7 +212,6 @@ p {
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  margin-top: 50px;
 }
 
 .email_grab p {
@@ -1085,6 +1086,10 @@ p {
   .email_grab p {
     font-size: 18px;
   }
+
+  .description .top {
+    padding-top: 50px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1256,6 +1261,11 @@ p {
 
   .email_grab {
     align-self: center;
+  }
+
+  .landing h1 {
+    align-self: center;
+    text-align: center;
   }
 
 }
