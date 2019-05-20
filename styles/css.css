@@ -178,7 +178,7 @@ p {
   background-attachment: fixed;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
@@ -187,58 +187,61 @@ p {
 }
 
 .landing .container {
-  width: 80%;
-  padding: 100px 0;
+  width: 560px;
+  margin-right: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  /* padding: 100px 0;
+  flex-wrap: wrap; */
 }
 
 .landing h1 {
-  align-self: flex-end;
-  text-align: right;
   color: #f9f9f9;
+  text-align: center;
   text-shadow: 2px 2px 8px #000000;
   font-size: 36px;
   line-height: 72px;
-  max-width: 575px;
-  padding: 50px;
 }
 
 .email_grab {
-  align-self: flex-end;
+  /*
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px; */
   padding: 50px;
 }
 
 .email_grab p {
   color: #fff;
   text-align: center;
+  font-size: 18px;
+  margin-bottom: 24px;
+  /*
   font-size: 24px;
   letter-spacing: 1px;
-  margin-bottom: 24px;
+  margin-bottom: 24px; */
 }
 
 .email_input {
   margin: auto;
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .email_input input {
   width: 275px;
   height: 50px;
-  padding: 0 25px;
   border: none;
   border-radius: 50px 0 0 50px;
+  padding: 0 25px;
 }
 
 .email_input input[type="email"] {
   font-size: 16px;
-  /* background: rgba(255, 255, 255, 0.2);
-  color: #fff; */
 }
 
 .email_input button {
@@ -1007,11 +1010,13 @@ p {
   }
 
   .email_grab button {
-    height: 30px;
+    /* height: 30px; */
+    min-width: 90px;
   }
 
   .email_grab input {
-    height: 30px;
+    /* height: 30px; */
+    min-width: 100px;
   }
 
   .email_grab input[type="email"] {
@@ -1024,12 +1029,13 @@ p {
     width: 98%;
   }
   .landing {
-    height: 600px;
+    height: 100vh;
   }
 
   .landing .container {
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .email_grab {
@@ -1228,7 +1234,7 @@ p {
     width: 90%;
   }
   .landing {
-    background-image: url("../images/leading_img_center.png");
+    background-image: url("../images/leading_img_center.jpg");
     background-position: center center;
   }
 }
