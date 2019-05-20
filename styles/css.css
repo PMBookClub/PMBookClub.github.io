@@ -1236,6 +1236,9 @@ p {
   .landing {
     background-image: url("../images/leading_img_center.jpg");
     background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
   }
 }
 
