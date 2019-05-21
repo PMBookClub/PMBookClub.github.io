@@ -184,7 +184,7 @@ p {
 
 .landing h1 {
   color: #fff;
-  text-shadow: 1px 1px 10px rgba(0,0,0, 0.1);
+  text-shadow: 1px 1px 10px rgba(0,0,0, 0.5);
 }
 
 .landing .container {
@@ -213,6 +213,7 @@ p {
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, .1);
 }
 
 .email_input  input {
