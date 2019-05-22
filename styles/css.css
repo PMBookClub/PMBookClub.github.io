@@ -276,8 +276,11 @@ p {
 
 .team {
   padding: 100px;
-  background-image: url("../images/the_idea_background.png");
-  background-size: auto;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ), url("../images/the_idea_background.png");
+  background-size: cover;
   display: flex;
 }
 
@@ -313,20 +316,26 @@ p {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .author_img {
   flex: 1 ;
   width: 245px;
-  margin-bottom: 24px;
 }
 
 .author_img img {
   width: 100%;
   border-radius: 100%;
-  box-shadow: 2px 2px 16px rgba(0, 0, 0, .1);
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, .2);
 }
 
 
@@ -998,6 +1007,17 @@ p {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 400px) {
+
+  .team {
+    padding: 50px;
+  }
+
+  .authors .author .author_img {
+    width: 160px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .quote {
     width: 98%;
@@ -1156,6 +1176,23 @@ p {
 
 @media screen and (max-width: 900px) {
 
+  .team {
+    background-image: url("../images/the_idea_background_long.png");
+    background-size: cover;
+  }
+
+  .authors {
+    display: block;
+  }
+
+  .author {
+    margin: 25px auto;
+  }
+
+  .authors .author_img {
+    width: 245px;
+  }
+
   .insights_list p {
     width: 96%;
   }
@@ -1225,5 +1262,11 @@ p {
 
   .landing .container {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .author_img {
+    width: 180px;
   }
 }
