@@ -1127,6 +1127,7 @@ p {
 
   .landing {
     background-image: url("../images/leading_img_center.jpg");
+    background-size: cover;
     background-position: center center;
   }
 
