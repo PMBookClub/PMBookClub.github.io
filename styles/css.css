@@ -1125,12 +1125,6 @@ p {
     padding: 0 12px;
   }
 
-  .landing {
-    background-image: url("../images/leading_img_center.jpg");
-    background-size: cover;
-    background-position: center center;
-  }
-
   .landing .container {
     width: 90%;
   }
@@ -1176,6 +1170,12 @@ p {
 }
 
 @media screen and (max-width: 900px) {
+
+  .landing {
+    background-image: url("../images/leading_img_center.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
 
   .team {
     background-image: url("../images/the_idea_background_long.png");
