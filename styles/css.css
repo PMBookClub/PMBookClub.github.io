@@ -1173,7 +1173,7 @@ p {
 
   .landing {
     background-image: url("../images/leading_img_center.jpg");
-    background-size: auto 100%;
+    background-size: auto 100vh;
     background-position: center center;
   }
 
