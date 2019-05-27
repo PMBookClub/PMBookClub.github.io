@@ -1009,7 +1009,7 @@ p {
 
 @media screen and (max-width: 400px) {
 
-  .team {
+  .about, .team {
     padding: 50px;
   }
 
