@@ -176,7 +176,7 @@ p {
   height: 100vh;
   background-image: url("../images/leading_img.png");
   background-attachment: fixed;
-  background-size: auto;
+  background-size: cover;
   display: flex;
   justify-content: flex-end;
   align-items: center;
