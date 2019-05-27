@@ -1176,10 +1176,12 @@ p {
 @media screen and (max-width: 900px) {
 
   .landing {
-    height: 100vh;
     background-image: url("../images/leading_img_center.png");
     background-position: center bottom;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
   }
 
