@@ -1117,6 +1117,10 @@ p {
     margin-top: 0 !important;
   }
 
+  .landing {
+    background-size: auto 100% !important;
+  }
+
   .searchbar input {
     width: 90%
   }
@@ -1172,13 +1176,10 @@ p {
 @media screen and (max-width: 900px) {
 
   .landing {
-    background-image: url("../images/leading_img_center.jpg");
-    background-position: center center;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -ms-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    background-image: url("../images/leading_img_center.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .team {
