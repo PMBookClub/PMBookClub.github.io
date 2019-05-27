@@ -1174,11 +1174,11 @@ p {
   .landing {
     background-image: url("../images/leading_img_center.jpg");
     background-position: center center;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -ms-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
   }
 
   .team {
