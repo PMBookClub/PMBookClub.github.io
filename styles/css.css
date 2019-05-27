@@ -1175,6 +1175,7 @@ p {
     background-image: url("../images/leading_img_center.jpg");
     background-size: auto 100vh;
     background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .team {
