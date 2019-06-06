@@ -943,6 +943,10 @@ p {
   align-items: center;
 }
 
+.search_section h1{
+  color: #fff;
+}
+
 .searchbar {
     margin: auto;
     padding: 128px;
