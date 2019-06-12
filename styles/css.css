@@ -112,6 +112,10 @@ p {
   transition: background-color 200ms linear;
 }
 
+.navbar-fixed-top.scrolled .links a:before {
+    background-color: #fff;
+}
+
 .navbar .logo {
   height: 84px;
 }
@@ -188,7 +192,6 @@ p {
 }
 
 .landing .container {
-  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,7 +201,6 @@ p {
 }
 
 .email_grab {
-  /* background-color: red; */
   padding: 20px;
 }
 
@@ -209,7 +211,6 @@ p {
 }
 
 .email_input {
-  /* background-color: green; */
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
@@ -243,6 +244,13 @@ p {
 .email_input button:hover {
   background-color: #46A9E5;
   cursor: pointer;
+}
+
+.anchor:target {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
 }
 
 .about {
@@ -358,7 +366,6 @@ p {
 
 .popular .container a {
   text-decoration: none;
-  /* margin: 0 20px; */
 }
 
 .popular .container h2 {
@@ -367,6 +374,10 @@ p {
 
 .popular .container h4 {
   color: #000;
+}
+
+.popular h5 {
+  color: #e01a1a;
 }
 
 .bookrow {
