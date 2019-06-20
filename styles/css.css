@@ -1,8 +1,17 @@
+/* NO MARGIN/PADDING */
+
 * {
   margin: 0;
   padding: 0;
 }
 
+
+/* ADD NEW FONTS */
+
+
+/* ROBOTO FONT */
+
+/* ROBOTO REGULAR */
 @font-face {
     font-family: "Roboto";
     src: url("./Roboto-Regular.ttf");
@@ -10,18 +19,67 @@
     font-weight: normal;
 }
 
+/* ROBOTO ITALIC */
+@font-face {
+    font-family: "Roboto";
+    src: url("./Roboto-Italic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* ROBOTO BOLD */
+@font-face {
+    font-family: "Roboto";
+    src: url("./Roboto-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* ROBOTO BOLD ITALIC */
+@font-face {
+    font-family: "Roboto";
+    src: url("./Roboto-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* LATO FONT */
+
+/* LATO REGULAR */
 @font-face {
     font-family: "Lato";
     src: url("./Lato-Regular.ttf");
     font-style: normal;
     font-weight: normal;
 }
+
+/* LATO ITALIC */
 @font-face {
     font-family: "Lato";
     src: url("./Lato-Italic.ttf");
     font-style: italic;
     font-weight: normal;
 }
+
+/* LATO BOLD */
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* LATO BOLD ITALIC */
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/* SET HEADING STYLE */
 
 h1 {
   font-family: "Roboto";
@@ -52,12 +110,18 @@ h4 {
   font-size: 20px;
 }
 
+
+/* SET PARAGRAPH STYLE */
+
 p {
   font-family: "Lato";
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
 }
+
+
+/* SET BOOK DESCRIPTION STYLES */
 
 .book_desc {
   text-align: center;
@@ -95,6 +159,9 @@ p {
   font-size: 16px;
 }
 
+
+/* SET NAVBAR STYLE -- ON ALL PAGES */
+
 .navbar {
   height: 100px;
   overflow: hidden;
@@ -106,6 +173,9 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
+
+/* NAVBAR WHEN SCROLLING */
 
 .navbar-fixed-top.scrolled {
   background-color: #46B6E5 !important;
@@ -172,9 +242,32 @@ p {
   transform: scaleX(1);
 }
 
+
+/* NAVIGATION HAMBURGER BUTTON */
+
 .navbar .icon {
   display: none;
 }
+
+.icon {
+  height: 90px;
+  margin-bottom: 12px;
+}
+
+.icon img {
+  height: 100%;
+}
+
+/* END OF NAVBAR STYLES -- ON ALL PAGES */
+
+
+
+
+
+/* START OF HOME PAGE-SPECIFIC STYLING */
+
+
+/* HOME PAGE, LANDING SECTION */
 
 .landing {
   height: 100vh;
@@ -200,6 +293,9 @@ p {
   text-align: center;
 }
 
+
+/* EMAIL GRAB CONTAINER */
+
 .email_grab {
   padding: 20px;
 }
@@ -210,6 +306,9 @@ p {
   margin-bottom: 24px;
 }
 
+
+/* EMAIL INPUT CONTAINER */
+
 .email_input {
   margin: auto;
   display: flex;
@@ -217,7 +316,9 @@ p {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, .1);
 }
 
-.email_input  input {
+/* EMAIL INPUT FIELD */
+
+.email_input input {
   width: 275px;
   height: 50px;
   border: none;
@@ -228,6 +329,9 @@ p {
 .email_input input[type="email"] {
   font-size: 16px;
 }
+
+
+/* EMAIL GRAB BUTTON */
 
 .email_input button {
   width: 150px;
@@ -246,12 +350,18 @@ p {
   cursor: pointer;
 }
 
+
+/* ADD EXTRA SPACE ABOVE EACH SECTION */
+
 .anchor:target {
     display: block;
     position: relative;
     top: -100px;
     visibility: hidden;
 }
+
+
+/* ABOUT SECTION */
 
 .about {
   padding: 100px;
@@ -267,6 +377,9 @@ p {
   justify-content: space-evenly;
 }
 
+
+/* ABOUT POINT BOX ("DISCOVER, IDENTIFY, DETERMINE") */
+
 .about_point {
   flex: 1;
   width: 300px;
@@ -281,6 +394,9 @@ p {
 .about_img img {
   height: 100%;
 }
+
+
+/* TEAM SECTION */
 
 .team {
   padding: 100px;
@@ -307,17 +423,29 @@ p {
   margin-bottom: 50px;
 }
 
+
+/* HEADING FOR "MANAGED BY THE AUTHORS OF" */
+
 .team .title h2 {
   margin-bottom: 25px;
 }
+
+
+/* IMAGE FOR SWIPE TO UNLOCK LOGO */
 
 .team .title img {
   width: 100%;
 }
 
+
+/* REVIEWER COMPANY LOGO */
+
 .team .book_desc img {
   margin-top: 24px;
 }
+
+
+/* REVIEWERS CONTAINER */
 
 .authors {
   margin: auto;
@@ -327,6 +455,9 @@ p {
   justify-content: space-evenly;
 }
 
+
+/* INDIVIDUAL REVIEWER */
+
 .author {
   display: flex;
   flex-direction: column;
@@ -334,6 +465,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
+/* REVIEWER IMAGE */
 
 .author_img {
   flex: 1 ;
@@ -347,9 +481,14 @@ p {
 }
 
 
+/* REVIEWER COMPANY LOGO SHADOW */
+
 .author .book_desc img {
   box-shadow: 2px 2px 16px rgba(0, 0, 0, .1);
 }
+
+
+/* POPULAR SECTION */
 
 .popular {
   padding: 100px;
@@ -364,6 +503,9 @@ p {
   text-align: center;
 }
 
+
+/* POPULAR STYLES */
+
 .popular .container a {
   text-decoration: none;
 }
@@ -376,9 +518,17 @@ p {
   color: #000;
 }
 
+/* TODO: COMMENT OUT THE CSS CODE BELOW
+AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
+
 .popular .comingsoon {
   color: #e01a1a;
 }
+
+/* COMMENT OUT THE CSS CODE ABOVE */
+
+
+/* POPULAR BOOKS ROW */
 
 .bookrow {
   margin: auto;
@@ -388,6 +538,9 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+
+/* POPULAR INDIVIDUAL BOOK */
 
 .book {
   margin: 0 20px;
@@ -403,6 +556,9 @@ p {
   margin: 24px auto;
 }
 
+
+/* BOOK IMAGE */
+
 .book_img {
   width: 200px;
   height: 300px;
@@ -413,6 +569,9 @@ p {
   width: 100%;
   overflow: hidden;
 }
+
+
+/* FEATURED SECTION */
 
 .featured .container {
   padding: 100px;
@@ -426,6 +585,9 @@ p {
   margin-bottom: 50px;
 }
 
+
+/* FEATURED BOOK CONTAINER */
+
 .featured .featured_book {
   width: 900px;
   height: 450px;
@@ -435,6 +597,9 @@ p {
   background-color: #fff;
 }
 
+
+/* FEATURED BOOK IMAGE */
+
 .featured .featured_img {
   width: 300px;
 }
@@ -442,6 +607,9 @@ p {
 .featured .featured_img img {
   height: 100%;
 }
+
+
+/* FEATURED BOOK DESCRIPTION */
 
 .featured .featured_desc {
   margin: 50px;
@@ -460,6 +628,9 @@ p {
   margin: 6px 24px;
   text-align: center;
 }
+
+
+/* FEATURED BOOK BUTTON */
 
 .seemore {
   background-color: #46B6E5;
@@ -487,6 +658,14 @@ p {
 .featured_desc h4 {
   color: #888888;
 }
+
+/* END OF HOME PAGE-SPECIFIC STYLING -->
+
+
+
+
+
+/* FOOTER -- ON ALL PAGES */
 
 .footer {
   background-color: #132f44;
@@ -524,6 +703,9 @@ p {
   text-decoration: underline;
 }
 
+
+/* COPYRIGHT PORTION IN FOOTER */
+
 .copyright {
   height: 40px;
   display: flex;
@@ -534,6 +716,17 @@ p {
   font-size: 12px;
   letter-spacing: 0.5px;
 }
+
+/* END OF FOOTER -- ON ALL PAGES */
+
+
+
+
+
+/* START OF INDIVIDUAL BOOK PAGES STYLING */
+
+
+/* BOOK DESCRIPTION STYLING */
 
 .description .container {
   background-attachment: fixed;
@@ -555,35 +748,56 @@ p {
   align-items: center;
 }
 
+
+/* BACKGROUND #1: BLUE GRADIENT */
+
 .description .bg1 {
   background-image: url("../images/background_1.png");
   background-size: auto;
 }
+
+
+/* BACKGROUND #2: BLUE, RED, AND DARK */
 
 .description .bg2 {
   background-image: url("../images/background_2.png");
   background-size: auto;
 }
 
+
+/* BACKGROUND #3: ORANGE AND RED */
+
 .description .bg3 {
   background-image: url("../images/background_3.png");
   background-size: auto;
 }
+
+
+/* BACKGROUND #4: PURPLE AND BLUE-GREEN */
 
 .description .bg4 {
   background-image: url("../images/background_4.png");
   background-size: auto;
 }
 
+
+/* BACKGROUND #5: ORANGE AND BLUE */
+
 .description .bg5 {
   background-image: url("../images/background_5.png");
   background-size: auto;
 }
 
+
+/* BACKGROUND #6: PINK/PURPLE */
+
 .description .bg6 {
   background-image: url("../images/background_6.png");
   background-size: auto;
 }
+
+
+/* BOOK COVER */
 
 .cover_img {
   width: 252px;
@@ -596,11 +810,8 @@ p {
   overflow: hidden;
 }
 
-.description .left  {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
+/* BUY ON AMAZON BUTTON */
 
 .buylink {
   text-decoration: none;
@@ -626,6 +837,28 @@ p {
 .buy:hover {
   background-color: #131314;
 }
+
+.buy_button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  background-color: #BD1535;
+  font-family: "Roboto";
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.buy_button:hover {
+  background-color: #A80E2B;
+}
+
+
+/* BOOK DESCRIPTION STYLING */
 
 .description .text {
   width: 580px;
@@ -663,6 +896,9 @@ p {
   text-decoration: none;
 }
 
+
+/* OVERVIEW BUTTONS: KEY INSIGHTS, QUOTABLE QUOTES, BOOK RELEVANCE */
+
 .overview {
   display: flex;
   flex-direction: row;
@@ -691,59 +927,6 @@ p {
   margin-right: 12px;
 }
 
-.icon {
-  height: 90px;
-  margin-bottom: 12px;
-}
-
-.icon img {
-  height: 100%;
-}
-
-.overview .right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F9F9F9;
-  margin: 0 5px;
-}
-
-.overview .right h3 {
-  margin: 48px auto 24px;
-}
-
-.overview .right a {
-  text-decoration: none;
-}
-
-.buy_button {
-  width: 200px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 50px;
-  background-color: #BD1535;
-  font-family: "Roboto";
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: #fff;
-}
-
-.buy_button:hover {
-  background-color: #A80E2B;
-}
-
-.overview .middle a {
-  flex: 1;
-  width: 100%;
-  text-decoration: none;
-  color: #fff;
-}
-
 .overview .top {
   height: 196.666px;
   margin-bottom: 5px;
@@ -758,32 +941,8 @@ p {
   background-color: #FF8E00;
 }
 
-.overview .center {
-  height: 196.666px;
-  margin-bottom: 5px;
-  background-color: #A4D72C;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.overview .center:hover {
-  background-color: #8DD72C;
-}
-
-.overview .bottom {
-  height: 196.666px;
-  background-color: #46B6E5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.overview .bottom:hover {
-  background-color: #46A9E5;
-}
+/* KEY INSIGHTS SECTION */
 
 .insights .container {
   padding: 10%;
@@ -792,6 +951,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
+/* INSIGHTS LIST */
 
 .insights_list {
   display: flex;
@@ -805,6 +967,9 @@ p {
   width: 800px;
 }
 
+
+/* INSIGHTS SUBHEADING STYLING */
+
 .subheading {
   margin: 48px auto 24px;
   display: flex;
@@ -815,6 +980,9 @@ p {
   color: #BD1535;
   letter-spacing: 1px;
 }
+
+
+/* SECTION ICON STYLING */
 
 .section_icon {
   margin-bottom: 12px;
@@ -831,6 +999,9 @@ p {
 .section_icon img {
   height: 100%;
 }
+
+
+/* QUOTES SECTION */
 
 .quotes {
   background-color: #f9f9f9;
@@ -863,6 +1034,9 @@ p {
   text-align: center;
 }
 
+
+/* BOOK RELEVANCE SECTION */
+
 .review .container {
   padding: 10%;
   display: flex;
@@ -876,9 +1050,15 @@ p {
   width: 800px;
 }
 
+
+/* BOOK REVIEW */
+
 .review .review_text {
   text-align: justify;
 }
+
+
+/* RATING SIDEBAR */
 
 .review .sidebar .rating {
   margin: 24px;
@@ -891,6 +1071,9 @@ p {
 .review .sidebar .rating img {
   margin: 24px auto;
 }
+
+
+/* REVIEWER INFORMATION */
 
 .review .sidebar .reviewer {
     display: flex;
@@ -925,6 +1108,8 @@ p {
 }
 
 
+/* RELEVANCE SECTION FONT STYLING */
+
 .review h3 {
   margin-bottom: 48px;
 }
@@ -935,6 +1120,9 @@ p {
   line-height: 24px;
 }
 
+
+/* BOOK RELEVANCE SUBSECTION ICON STYLING */
+
 .subsection .section_icon {
   display: flex;
   align-items: center;
@@ -944,6 +1132,18 @@ p {
 .subsection .section_icon img {
   margin-right: 24px;
 }
+
+/* END OF INDIVIDUAL BOOK PAGES STYLING */
+
+
+
+
+
+/* START OF ALL BOOKS PAGE */
+
+
+/* SEARCH SECTION STYLING
+  TODO: */
 
 .search_section {
   background-color: #132F44;
@@ -957,6 +1157,10 @@ p {
 .search_section h1{
   color: #fff;
 }
+
+
+/* SEARCH BAR STYING
+  TODO: */
 
 .searchbar {
     margin: auto;
@@ -995,6 +1199,9 @@ p {
   cursor: pointer;
 }
 
+
+/* ALL BOOKS */
+
 .bookshelf .container {
   margin: auto;
   padding: 100px;
@@ -1019,6 +1226,7 @@ p {
 .bookshelf .bookrow a {
   margin: 0 25px;
 }
+
 
 /* MEDIA QUERIES */
 
