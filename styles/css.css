@@ -82,14 +82,14 @@
 /* SET HEADING STYLE */
 
 h1 {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 32px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 26px;
   letter-spacing: 1px;
@@ -97,7 +97,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 24px;
   letter-spacing: 1px;
@@ -105,7 +105,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 20px;
 }
@@ -114,7 +114,7 @@ h4 {
 /* SET PARAGRAPH STYLE */
 
 p {
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
@@ -128,14 +128,14 @@ p {
 }
 
 .book_desc h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
 }
 
 .book_desc h4 {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
@@ -147,14 +147,14 @@ p {
 }
 
 .book_desc h5 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 14px;
   color: #888888;
 }
 
 .book_desc p {
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
 }
@@ -205,7 +205,7 @@ p {
 
 .navbar .links a {
   margin: 0 12px;
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -688,7 +688,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 
 .footer ul li {
   margin: 0 12px;
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -712,7 +712,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
 }
@@ -872,7 +872,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 }
 
 .description h5 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 16px;
   margin: 10px 0;
@@ -880,7 +880,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 }
 
 .description h4 {
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: italic;
   font-size: 20px;
@@ -914,7 +914,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   color: #fff;
 }
 
@@ -975,7 +975,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: #BD1535;
   letter-spacing: 1px;
@@ -1176,7 +1176,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
   height: 45px;
   border: none;
   border-radius: 45px 0 0 45px;
-  font-family: "Lato";
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 18px;
   padding: 0 24px;
 }
