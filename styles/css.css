@@ -281,6 +281,7 @@ p {
 
 .landing h1 {
   color: #fff;
+  opacity: 0.8;
   text-shadow: 1px 1px 10px rgba(0,0,0, 0.5);
 }
 
@@ -302,8 +303,9 @@ p {
 
 .email_grab p {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 24px;
+  opacity: 0.6;
 }
 
 
@@ -313,6 +315,7 @@ p {
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   box-shadow: 2px 2px 16px rgba(0, 0, 0, .1);
 }
 
@@ -339,7 +342,7 @@ p {
   border: none;
   border-radius: 0 50px 50px 0;
   background-color: #46B6E5;
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: #fff;
@@ -640,6 +643,8 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
 .seemore:hover {
