@@ -191,7 +191,7 @@ p {
 }
 
 .navbar .logo img {
-  height: 100%;
+  height: 84px;
 }
 
 .navbar .links{
@@ -1334,6 +1334,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 
   .responsive .logo {
     margin-top: 24px;
+    height: 84px;
   }
 
   .responsive a {
