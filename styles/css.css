@@ -15,33 +15,37 @@
 @font-face {
     font-family: "Roboto";
     src: url("./Roboto-Regular.ttf");
+    src: local("Roboto"), url("Roboto-Regular.ttf");
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
 }
 
 /* ROBOTO ITALIC */
 @font-face {
     font-family: "Roboto";
     src: url("./Roboto-Italic.ttf");
+    src: local("Roboto"), url("Roboto-Italic.ttf");
     font-style: italic;
     font-weight: normal;
 }
 
 /* ROBOTO BOLD */
-@font-face {
+/* @font-face {
     font-family: "Roboto";
     src: url("./Roboto-Bold.ttf");
+    src: local("Roboto"), url("Roboto-Bold.ttf");
     font-style: normal;
     font-weight: bold;
-}
+} */
 
 /* ROBOTO BOLD ITALIC */
-@font-face {
+/* @font-face {
     font-family: "Roboto";
     src: url("./Roboto-BoldItalic.ttf");
+    src: local("Roboto"), url("Roboto-BoldItalic.ttf");
     font-style: italic;
     font-weight: bold;
-}
+} */
 
 
 /* LATO FONT */
@@ -50,6 +54,7 @@
 @font-face {
     font-family: "Lato";
     src: url("./Lato-Regular.ttf");
+    src: local("Lato"), url("Lato-Regular.ttf");
     font-style: normal;
     font-weight: normal;
 }
@@ -58,25 +63,28 @@
 @font-face {
     font-family: "Lato";
     src: url("./Lato-Italic.ttf");
+    src: local("Lato"), url("Lato-Italic.ttf");
     font-style: italic;
     font-weight: normal;
 }
 
 /* LATO BOLD */
-@font-face {
+/* @font-face {
     font-family: "Lato";
     src: url("./Lato-Bold.ttf");
+    src: local("Lato"), url("Lato-Bold.ttf");
     font-style: normal;
     font-weight: bold;
-}
+} */
 
 /* LATO BOLD ITALIC */
-@font-face {
+/* @font-face {
     font-family: "Lato";
     src: url("./Lato-BoldItalic.ttf");
+    src: local("Lato"), url("Lato-BoldItalic.ttf");
     font-style: italic;
     font-weight: bold;
-}
+} */
 
 
 /* SET HEADING STYLE */
@@ -84,13 +92,14 @@
 h1 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 32px;
+  font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h2 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 26px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -98,7 +107,7 @@ h2 {
 
 h3 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 24px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -106,8 +115,12 @@ h3 {
 
 h4 {
   font-family: "Lato", Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
+}
+
+h5 {
+  font-weight: normal;
 }
 
 
@@ -120,6 +133,18 @@ p {
   font-weight: normal;
 }
 
+ul {
+  margin-left: 60px;
+}
+
+li {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+}
+
 
 /* SET BOOK DESCRIPTION STYLES */
 
@@ -129,14 +154,13 @@ p {
 
 .book_desc h3 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: normal;
   font-size: 20px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .book_desc h4 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
   width: 200px;
@@ -148,7 +172,6 @@ p {
 
 .book_desc h5 {
   font-family: "Lato", Arial, Helvetica, sans-serif;
-  font-weight: normal;
   font-size: 14px;
   color: #888888;
 }
@@ -331,6 +354,7 @@ p {
 
 .email_input input[type="email"] {
   font-size: 16px;
+  font-weight: bold;
 }
 
 
@@ -546,7 +570,7 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 /* POPULAR INDIVIDUAL BOOK */
 
 .book {
-  margin: 0 20px;
+  margin: 20px;
 }
 
 .book:hover {
