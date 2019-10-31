@@ -588,12 +588,12 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 
 .book_img {
   width: 200px;
-  height: 300px;
-  box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
+  /* height: 300px; */
 }
 
 .book_img img {
   width: 100%;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
   overflow: hidden;
 }
 
@@ -830,13 +830,15 @@ AFTER REPLACING "COMING SOON" WITH THE BOOK AUTHOR */
 
 .cover_img {
   width: 252px;
-  height: 378px;
-  box-shadow: 2px 8px 10px rgba(0, 0, 0, .5);
+  margin: 0;
+  padding: 0;
 }
 
 .cover_img img {
   width: 100%;
-  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+  margin: 0;
+  padding: 0;
 }
 
 
